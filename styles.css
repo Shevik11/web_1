@@ -1,0 +1,43 @@
+#defensive-image {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* This will automatically adjust the height to maintain aspect ratio */
+}
+
+#offensive-image {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* This will automatically adjust the height to maintain aspect ratio */
+}
+
+/* CSS for coaches table */
+#coaches {
+    margin-top: 20px;
+}
+
+#coaches table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#coaches th, #coaches td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#coaches th {
+    background-color: #f2f2f2;
+}
+
+#coaches tr:nth-child(even) {
+    background-color: #f2f2f2; /* Заливка кожного другого рядка */
+}
+
+#coaches tr:hover {
+    background-color: #ddd; /* Заливка при наведенні на рядок */
+}
+
+#coaches th, #coaches td {
+    border: 1px solid #ddd; /* Відокремлення між комірками */
+    padding: 8px;
+    text-align: left;
+}
