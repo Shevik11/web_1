@@ -1,43 +1,132 @@
-#defensive-image {
-    width: 300px; /* Adjust the width as needed */
-    height: auto; /* This will automatically adjust the height to maintain aspect ratio */
-}
-
-#offensive-image {
-    width: 300px; /* Adjust the width as needed */
-    height: auto; /* This will automatically adjust the height to maintain aspect ratio */
-}
-
 /* CSS for coaches table */
-#coaches {
+#defensive-image {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+}
+
+.footer {
+    background-color: #f2f2f2;
+}
+
+.section-heading {
+    color: #333;
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#special-characters {
+    opacity: 0.5; /* Півпрозорий */
+}
+
+.coaches {
     margin-top: 20px;
 }
 
-#coaches table {
+.coaches-table {
     border-collapse: collapse;
     width: 100%;
 }
 
-#coaches th, #coaches td {
+.coaches-table th, .coaches-table td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
 }
 
-#coaches th {
+.coaches-table th {
     background-color: #f2f2f2;
 }
 
-#coaches tr:nth-child(even) {
+.coaches-table tr:nth-child(even) {
     background-color: #f2f2f2; /* Заливка кожного другого рядка */
 }
 
-#coaches tr:hover {
+.coaches-table tr:hover {
     background-color: #ddd; /* Заливка при наведенні на рядок */
 }
 
-#coaches th, #coaches td {
+.coaches-table th, .coaches-table td {
     border: 1px solid #ddd; /* Відокремлення між комірками */
     padding: 8px;
     text-align: left;
+}
+
+/* CSS for main headings */
+.main-heading, .sub-heading, .section-heading {
+    color: #333; /* Колір тексту */
+    font-family: Arial, sans-serif; /* Шрифт */
+    margin-bottom: 10px; /* Відступ знизу */
+}
+
+/* CSS for images */
+.strategy img {
+    width: 300px; /* Розмір зображень */
+    height: auto; /* Автоматична висота для збереження пропорцій */
+}
+
+#main-content {
+    overflow: auto; /* Показувати прокрутку, якщо вміст не поміщається */
+}
+
+/* Додаткові стилі можна додавати тут */
+
+a {
+    color: blue; /* Колір тексту для звичайних посилань */
+    text-decoration: none; /* Відміна підкреслення */
+}
+
+a:hover {
+    text-decoration: underline; /* Підкреслення при наведенні курсора */
+}
+
+ul, ol {
+    margin-left: 20px; /* Відступ від лівого краю для всіх списків */
+    list-style-position: inside; /* Розміщення маркера всередині блоку списку */
+}
+
+li {
+    margin-bottom: 5px; /* Відступ знизу для кожного пункту списку */
+    padding-left: 10px; /* Відступ від лівого краю для тексту пункту списку */
+}
+
+/* Стилі для списку, який знаходиться в #main-content */
+#main-content ul {
+    list-style-type: square; /* Тип маркера (квадрат) для невпорядкованого списку */
+}
+
+#main-content ol {
+    list-style-type: decimal; /* Тип маркера (цифра) для впорядкованого списку */
+}
+
+.flex-container {
+    display: flex;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-up {
+    animation: slide-up 0.5s ease-out forwards;
 }

@@ -5,33 +5,33 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Football Tactics Website</h1>
-        <h2>Sites with usessful information</h2>
-        <nav>
-            <ul>
+    <header class="my-block slide-up">
+        <h1 class="main-heading">Football Tactics Website</h1>
+        <h2 class="sub-heading">Sites with useful information</h2>
+        <nav class="navigation">
+            <ul class="menu">
                 <li><a href="https://ekipgrass.net/football-tactics/">Tactics</a></li>
                 <li><a href="https://howtheyplay.com/team-sports/Top-10-Best-Football-Managers-In-The-World">Best coaches</a></li>
             </ul>
         </nav>
     </header>
 
-    <div id="main-content">
+    <div id="main-content" class="my-block slide-up">
 
-        <h2> Top teams </h2>
-        <p>Here are top 5 teams nowadays </p>
-        <ol>
+        <h2 class="section-heading">Top teams</h2>
+        <p>Here are top 5 teams nowadays</p>
+        <ol class="team-list">
             <li>Dynamo Kyiv</li>
             <li>Manchester City</li>
             <li>Liverpool</li>
         </ol>
 
 
-        <h2>Main Tactics</h2>
+        <h2 class="my-block slide-up">Main Tactics</h2>
         <p>Here are the main tactics for the game:</p>
-        <dl>
+        <dl class="tactics-list">
             <dt>Zonal Marking</dt>
-            <dd> is a defensive football tactic where players defend specific zones rather than marking individual opponents.</dd>
+            <dd>is a defensive football tactic where players defend specific zones rather than marking individual opponents.</dd>
             <dt>Man-to-Man Marking</dt>
             <dd>is a defensive football tactic where each defensive player is assigned to mark a specific opponent, following them wherever they go on the field.</dd>
             <dt>Counter-Attacking</dt>
@@ -39,22 +39,22 @@
         </dl>
         
 
-        <div id="sub-tactics">
-            <h3>Subtactics</h3>
-            <div id="defensive-strategy">
+        <div id="sub-tactics" class="my-block slide-up">
+            <h3 class="sub-heading">Subtactics</h3>
+            <div id="defensive-strategy" class="strategy">
                 <h4>Defensive Strategy</h4>
                 <img id="defensive-image" src="image/defence.jpeg" alt="Defensive Strategy Image">
             </div>
-            <div id="offensive-strategy">
+            <div id="offensive-strategy" class="strategy">
                 <h4>Offensive Strategy</h4>
                 <img id="offensive-image" src="image/offensive.jpg" alt="Offensive Strategy Image">
             </div>
         </div>
     </div>
 
-    <div id="coaches">
-        <h2>Top 5 Football Coaches</h2>
-        <table>
+    <div id="coaches" class="my-block slide-up">
+        <h2 class="section-heading">Top 5 Football Coaches</h2>
+        <table class="coaches-table">
             <tr>
                 <th>Coach</th>
                 <th>Club</th>
@@ -82,36 +82,36 @@
         </table>
     </div>
 
-    <footer>
+    <footer class="my-block slide-up">
         <p>Contact us: football@example.com</p>
-        <div id="special-characters">
-            <p>Special Characters: &copy; &reg; &trade;</p>
+        <div id="special-characters" class="special-characters">
+            <p>Special Characters: &copy; &reg; &trade; &#128513; &#128151; &#128525; </p>
         </div>
-        <form>
-            <input type="text" placeholder="Enter your email" name="email">
+        <form class="form">
+            <input type="text" placeholder="Enter your email" name="email" class="email-input">
             <br>
-            <input type="checkbox" name="subscribe" value="news"> Subscribe to news
-            <input type="checkbox" name="subscribe" value="updates"> Subscribe to updates
-            <input type="checkbox" name="subscribe" value="offers"> Subscribe to offers
+            <input type="checkbox" name="subscribe" value="news" class="subscribe-checkbox"> Subscribe to news
+            <input type="checkbox" name="subscribe" value="updates" class="subscribe-checkbox"> Subscribe to updates
+            <input type="checkbox" name="subscribe" value="offers" class="subscribe-checkbox"> Subscribe to offers
             <br>
-            <input type="radio" name="gender" value="male"> Male
-            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="male" class="gender-radio"> Male
+            <input type="radio" name="gender" value="female" class="gender-radio"> Female
             <br>
-            <button type="submit">Subscribe</button>
+            <button type="submit" class="submit-button">Subscribe</button>
             <br>
-            <input type="file" name="file"> Photo Upload
+            <input type="file" name="file" class="file-input"> Photo Upload
             <br>
-            <textarea name="message" rows="5" cols="30"></textarea> Біографія
+            <textarea name="message" rows="5" cols="30" class="message-textarea"></textarea> Біографія
             <br>
-            <select name="tactics">
+            <select name="tactics" class="tactics-select">
                 <option value="zonal-marking">Zonal Marking</option>
                 <option value="man-to-man-marking">Man-to-Man Marking</option>
                 <option value="counter-attacking">Counter-Attacking</option>
                 <option value="possession-play">Possession Play</option>
             </select>
             <br>            
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username">
+            <label for="username" class="username-label">Username:</label>
+            <input type="text" id="username" name="username" class="username-input">
 
         </form>
     </footer>
