@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" href="image/ico.ico" type="image/x-icon">
     <title>Football Tactics</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header class="my-block slide-up">
-        <h1 class="main-heading">Football Tactics Website</h1>
+        <h1 class="main-heading" >Football Tactics Website</h1>
         <h2 class="sub-heading">Sites with useful information</h2>
         <nav class="navigation">
+            <h2>Links to introduction information </h2>
+            <p>In these links you can read about best coaches(tacktscs) and some of best tacktics in history</p>
+            <p>Thats only for introduction, not more</p>
             <ul class="menu">
-                <li><a href="https://ekipgrass.net/football-tactics/">Tactics</a></li>
+                <li><a href="https://ekipgrass.net/football-tactics/" >Tactics</a></li>
                 <li><a href="https://howtheyplay.com/team-sports/Top-10-Best-Football-Managers-In-The-World">Best coaches</a></li>
             </ul>
         </nav>
@@ -19,7 +23,8 @@
     <div id="main-content" class="my-block slide-up">
 
         <h2 class="section-heading">Top teams</h2>
-        <p>Here are top 5 teams nowadays</p>
+        <p >Here are top 5 teams nowadays</p>
+        <p>These teams best and if you want to learn smart tacktics, best way - watch their games</p>
         <ol class="team-list">
             <li>Dynamo Kyiv</li>
             <li>Manchester City</li>
@@ -27,8 +32,9 @@
         </ol>
 
 
-        <h2 class="my-block slide-up">Main Tactics</h2>
-        <p>Here are the main tactics for the game:</p>
+        <h2 class="my-block slide-up" style="text-align: center;">Main Tactics</h2>
+        <p>Here are the most basic tactics for the game:</p>
+        <p>They not very smart, but everyone must know about them</p>
         <dl class="tactics-list">
             <dt>Zonal Marking</dt>
             <dd>is a defensive football tactic where players defend specific zones rather than marking individual opponents.</dd>
@@ -38,12 +44,11 @@
             <dd>is a football tactic where a team quickly transitions from defense to offense in response to an opponent's attack, aiming to exploit open spaces and catch the opponent off guard.</dd>
         </dl>
         
-
+        <h3 class="sub-heading">Subtactics</h3>
         <div id="sub-tactics" class="my-block slide-up">
-            <h3 class="sub-heading">Subtactics</h3>
             <div id="defensive-strategy" class="strategy">
                 <h4>Defensive Strategy</h4>
-                <img id="defensive-image" src="image/defence.jpeg" alt="Defensive Strategy Image">
+                <img id="defensive-image" src="image/df.jpg" alt="Defensive Strategy Image">
             </div>
             <div id="offensive-strategy" class="strategy">
                 <h4>Offensive Strategy</h4>
@@ -83,37 +88,48 @@
     </div>
 
     <footer class="my-block slide-up">
-        <p>Contact us: football@example.com</p>
         <div id="special-characters" class="special-characters">
-            <p>Special Characters: &copy; &reg; &trade; &#128513; &#128151; &#128525; </p>
+            <p>Special Characters: &copy; &reg; &trade; &#128513; ; &#128525; </p>
         </div>
         <form class="form">
-            <input type="text" placeholder="Enter your email" name="email" class="email-input">
+            <h5 >Registration</h5>
+            <input type="text" placeholder="Enter your email &#128151" name="email" class="email-input">
+            <br>
+            <input type="text" placeholder="Enter your password &#128151" name="email" class="email-input">
+            <br>
+            <br>
+            <label for="username" class="username-label">Username&#128525:</label>
+            <input type="text" id="username" name="username" class="username-input">
+            <br>
             <br>
             <input type="checkbox" name="subscribe" value="news" class="subscribe-checkbox"> Subscribe to news
             <input type="checkbox" name="subscribe" value="updates" class="subscribe-checkbox"> Subscribe to updates
             <input type="checkbox" name="subscribe" value="offers" class="subscribe-checkbox"> Subscribe to offers
             <br>
+            <br>
             <input type="radio" name="gender" value="male" class="gender-radio"> Male
             <input type="radio" name="gender" value="female" class="gender-radio"> Female
             <br>
+            <br>
             <button type="submit" class="submit-button">Subscribe</button>
+            <br>
             <br>
             <input type="file" name="file" class="file-input"> Photo Upload
             <br>
+            <br>
             <textarea name="message" rows="5" cols="30" class="message-textarea"></textarea> Біографія
             <br>
+            <br>
+            <h5>Favourite tacktics</h5>
             <select name="tactics" class="tactics-select">
                 <option value="zonal-marking">Zonal Marking</option>
                 <option value="man-to-man-marking">Man-to-Man Marking</option>
                 <option value="counter-attacking">Counter-Attacking</option>
                 <option value="possession-play">Possession Play</option>
             </select>
-            <br>            
-            <label for="username" class="username-label">Username:</label>
-            <input type="text" id="username" name="username" class="username-input">
-
+            <br>
         </form>
+        <p>Contact us: football@example.com</p>
     </footer>
 </body>
 </html>

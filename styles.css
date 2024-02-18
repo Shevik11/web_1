@@ -1,4 +1,15 @@
 /* CSS for coaches table */
+
+/* header {
+    display: flex;
+    flex-direction: column; /* Вирівнювання по вертикалі 
+    justify-content: center; /* Вирівнювання по центру горизонталі 
+    align-items: center; /* Вирівнювання по центру вертикалі 
+    background-color: #333; /* Колір фону *
+    color: white; /* Колір тексту *
+    padding: 20px; /* Відступ /
+} */
+
 #defensive-image {
     width: 300px;
     height: auto;
@@ -6,9 +17,13 @@
     padding: 5px;
 }
 
-.footer {
-    background-color: #f2f2f2;
+footer {
+    background-color: #333333;
+    color: white; /* Колір тексту */
+    padding: 20px; /* Відступ для футера */
 }
+
+
 
 .section-heading {
     color: #333;
@@ -22,7 +37,7 @@ button {
     border: 1px solid #ccc;
     text-align: center;
     text-decoration: none;
-    color: #333;
+    color: #333333;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
@@ -32,23 +47,27 @@ button {
     opacity: 0.5; /* Півпрозорий */
 }
 
-.coaches {
-    margin-top: 20px;
+#coaches {
+    background-color: #333333; /* Колір фону контейнера */
+    color: white; /* Колір тексту у контейнері */
+    padding: 20px; /* Відступ для контейнера */
 }
 
 .coaches-table {
-    border-collapse: collapse;
-    width: 100%;
+    background-color: white; /* Колір фону таблиці */
+    color: #333333; /* Колір тексту у таблиці */
+    border-collapse: collapse; /* Злиття рамок таблиці */
+    width: 100%; /* Ширина таблиці */
 }
 
 .coaches-table th, .coaches-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+    border: 1px solid #ddd; /* Рамка для комірок */
+    padding: 8px; /* Відступ у комірках */
+    text-align: left; /* Вирівнювання тексту по лівому краю */
 }
 
 .coaches-table th {
-    background-color: #f2f2f2;
+    background-color: #f2f2f2; /* Колір фону для заголовків */
 }
 
 .coaches-table tr:nth-child(even) {
@@ -67,10 +86,26 @@ button {
 
 /* CSS for main headings */
 .main-heading, .sub-heading, .section-heading {
-    color: #333; /* Колір тексту */
+    color: white; /* Колір тексту */
     font-family: Arial, sans-serif; /* Шрифт */
     margin-bottom: 10px; /* Відступ знизу */
+    text-align: center;
 }
+
+body {
+    font-family: Arial, sans-serif; /* Встановлення шрифту для всього документа */
+    margin: 0; /* Видалення зовнішніх відступів */
+    padding: 0; /* Видалення внутрішніх відступів */
+    background-color: #333333; /* Колір фону */
+}
+
+#sub-tactics {
+    display: flex; /* Зробити контейнер гнучким */
+    flex-direction: row; /* Розташувати елементи в рядок */
+    justify-content: space-around; /* Рівномірно розподілити простір між елементами по горизонталі */
+    align-items: center; /* Вирівняти елементи по вертикалі по центру */
+}
+
 
 /* CSS for images */
 .strategy img {
@@ -85,7 +120,7 @@ button {
 /* Додаткові стилі можна додавати тут */
 
 a {
-    color: blue; /* Колір тексту для звичайних посилань */
+    color: green; /* Колір тексту для звичайних посилань */
     text-decoration: none; /* Відміна підкреслення */
 }
 
@@ -93,14 +128,27 @@ a:hover {
     text-decoration: underline; /* Підкреслення при наведенні курсора */
 }
 
-ul, ol {
+ol {
     margin-left: 20px; /* Відступ від лівого краю для всіх списків */
     list-style-position: inside; /* Розміщення маркера всередині блоку списку */
+    background-color: #1d1d1d;
+
+}
+.navigation {
+    background-color: #333333; /* Замініть це на ваш колір фону */
+    padding: 10px; /* Додайте відступ для кращого вигляду */
+    color: white;
 }
 
 li {
     margin-bottom: 5px; /* Відступ знизу для кожного пункту списку */
     padding-left: 10px; /* Відступ від лівого краю для тексту пункту списку */
+    background-color: #1d1d1d;
+
+}
+dl {
+    background-color: #1d1d1d;
+
 }
 
 /* Стилі для списку, який знаходиться в #main-content */
@@ -129,4 +177,91 @@ li {
 
 .slide-up {
     animation: slide-up 0.5s ease-out forwards;
+}
+
+.team-list{
+    background-color: #333333;
+    padding-left: 20px; /* Відступ для списку команд */
+
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column; /* Вирівнювання по вертикалі */
+    background-color: #333; /* Колір фону */
+    color: white; /* Колір тексту */
+    padding: 20px; /* Відступ */
+}
+
+/* Стилі для заголовків */
+.section-heading, .sub-heading {
+    text-align: center; /* Вирівнювання тексту по центру */
+}
+
+/* Стилі для списку команд */
+.team-list {
+    list-style-type: none; /* Видалити маркери списку */
+    padding: 0; /* Видалити відступи */
+}
+
+/* Стилі для списку тактик */
+.tactics-list {
+    padding-left: 20px; /* Відступ для списку тактик */
+}
+
+/* Стилі для зображень стратегій */
+.strategy img {
+    width: 300px; /* Зберігаємо ширину в 300px */
+    height: auto; /* Автоматична висота для збереження пропорцій */
+}
+
+.menu {
+    display: flex; /* Встановлення flex контейнера */
+    justify-content: space-around; /* Рівномірне розподілення простору між елементами по горизонталі */
+    width: 100%; /* Ширина меню на всю ширину контейнера */
+    background-color: #1d1d1d; /* Замініть це на ваш колір фону */
+    color: white; /* Колір тексту */
+    padding: 10px 0; /* Відступи для меню */
+}
+
+/* CSS для основного контейнера */
+.container {
+    display: flex; /* Встановлення flex контейнера */
+    flex-direction: column; /* Вирівнювання по вертикалі */
+    align-items: center; /* Вирівнювання елементів по центру горизонталі */
+    background-color: #f2f2f2; /* Колір фону контейнера */
+    color: #333; /* Колір тексту */
+    padding: 20px; /* Відступи для контейнера */
+}
+
+h1 {
+    margin-top: 0; /* Видалення верхнього відступу для заголовка */
+}
+
+/* CSS для відступу між блоками */
+.space {
+    margin-top: 20px; /* Відступ зверху між блоками */
+}
+
+
+/* Медіа-запит для адаптивного дизайну */
+@media only screen and (min-width: 768px) {
+    .container {
+        flex-direction: row; /* Зміна напрямку flex контейнера на горизонтальний */
+        justify-content: space-between; /* Рівномірне розподілення простору між елементами по горизонталі */
+        align-items: flex-start; /* Вирівнювання по верхній частині горизонталі */
+        padding: 20px 50px; /* Відступи для контейнера */
+    }
+
+    .menu {
+        width: auto; /* Автоматична ширина меню */
+    }
+
+    .space {
+        margin-top: 0; /* Видалення верхнього відступу між блоками */
+    }
+
+    .footer {
+        padding: 20px; /* Відступи для футера */
+    }
 }
