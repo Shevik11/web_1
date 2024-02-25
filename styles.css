@@ -66,10 +66,6 @@ button {
     text-align: left; /* Вирівнювання тексту по лівому краю */
 }
 
-.coaches-table th {
-    background-color: #f2f2f2; /* Колір фону для заголовків */
-}
-
 .coaches-table tr:nth-child(even) {
     background-color: #f2f2f2; /* Заливка кожного другого рядка */
 }
@@ -90,13 +86,6 @@ button {
     font-family: Arial, sans-serif; /* Шрифт */
     margin-bottom: 10px; /* Відступ знизу */
     text-align: center;
-}
-
-body {
-    font-family: Arial, sans-serif; /* Встановлення шрифту для всього документа */
-    margin: 0; /* Видалення зовнішніх відступів */
-    padding: 0; /* Видалення внутрішніх відступів */
-    background-color: #333333; /* Колір фону */
 }
 
 #sub-tactics {
@@ -222,7 +211,22 @@ dl {
     background-color: #1d1d1d; /* Замініть це на ваш колір фону */
     color: white; /* Колір тексту */
     padding: 10px 0; /* Відступи для меню */
+    margin: 0;
+    list-style-type: none; /* Видалення маркерів списку */
+    font-size: 20px; /* Розмір тексту для пунктів меню */
 }
+
+.menus {
+    background-color: #1d1d1d; /* Замініть це на ваш колір фону */
+    display: flex; /* Встановлення flex контейнера */
+    justify-content: space-around; /* Рівномірне розподілення простору між елементами по горизонталі */
+    width: 100%; /* Ширина меню на всю ширину контейнера */
+    list-style-type: disc;
+    font-size: 18px; /* Розмір тексту для пунктів меню */
+
+}
+
+
 
 /* CSS для основного контейнера */
 .container {
@@ -255,6 +259,7 @@ h1 {
 
     .menu {
         width: auto; /* Автоматична ширина меню */
+        color: white;
     }
 
     .space {
@@ -264,16 +269,6 @@ h1 {
     .footer {
         padding: 20px; /* Відступи для футера */
     }
-}
-
-.menu {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    font-size: 20px; /* Розмір тексту для пунктів меню */
-
 }
 
 .menu li {

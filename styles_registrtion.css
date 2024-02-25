@@ -1,0 +1,59 @@
+/* FILEPATH: /d:/LNU/frontend/web/styles_registrtion.css */
+
+/* Form container */
+.registration-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+/* Form title */
+.registration-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form fields */
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Form submit button */
+.registration-form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+body {
+    background-color:  #333333;
+    color: #fff; /* колір тексту */
+    margin: 0; /* видаляє зовнішні відступи */
+    padding: 0; /* видаляє внутрішні відступи */
+    display: flex; /* використовуємо flexbox для центрування */
+    justify-content: center; /* центруємо по горизонталі */
+    align-items: center; /* центруємо по вертикалі */
+    height: 100vh; /* встановлюємо висоту на всю висоту екрану */
+}
+
+/* Form submit button hover effect */
+.registration-form button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.submit-button {
+    width: 150px; /* задаємо ширину кнопки */
+    height: 40px; /* задаємо висоту кнопки */
+    font-size: 16px; /* можна змінити розмір тексту */
+}

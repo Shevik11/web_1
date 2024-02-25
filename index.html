@@ -5,6 +5,14 @@
     <title>Football Tactics</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+<style>
+    body {
+    font-family: Arial, sans-serif; /* Встановлення шрифту для всього документа */
+    margin: 0; /* Видалення зовнішніх відступів */
+    padding: 0; /* Видалення внутрішніх відступів */
+    background-color: #333333; /* Колір фону */
+}
+</style>
 <body>
     <nav class="navigation">
         <ul class="menu">
@@ -21,10 +29,10 @@
             <h2>Links to introduction information </h2>
             <p>In these links you can read about best coaches(tacktscs) and some of best tacktics in history</p>
             <p>Thats only for introduction, not more</p>
-            <ul class="menu">
-                <li><a href="https://ekipgrass.net/football-tactics/" >Tactics</a></li>
+            <ol class="menus">
+                <li><a href="https://ekipgrass.net/football-tactics/">Tactics</a></li>
                 <li><a href="https://howtheyplay.com/team-sports/Top-10-Best-Football-Managers-In-The-World">Best coaches</a></li>
-            </ul>
+            </ol>               
         </nav>
     </header>
 
@@ -51,6 +59,8 @@
             <dt>Counter-Attacking</dt>
             <dd>is a football tactic where a team quickly transitions from defense to offense in response to an opponent's attack, aiming to exploit open spaces and catch the opponent off guard.</dd>
         </dl>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_wnjuNRjfTM" frameborder="0" allowfullscreen></iframe>
+
         
         <h3 class="sub-heading">Subtactics</h3>
         <div id="sub-tactics" class="my-block slide-up">
@@ -69,8 +79,8 @@
         <h2 class="section-heading">Top 5 Football Coaches</h2>
         <table class="coaches-table">
             <tr>
-                <th>Coach</th>
-                <th>Club</th>
+                <th style="background-color: white;">Coach</th>
+                <th style="background-color: white;">Club</th>
             </tr>
             <tr>
                 <td>Jürgen Klopp</td>
@@ -96,48 +106,21 @@
     </div>
 
     <footer class="my-block slide-up">
-        <div id="special-characters" class="special-characters">
-            <p>Special Characters: &copy; &reg; &trade; &#128513; ; &#128525; </p>
-        </div>
-        <form class="form">
-            <h5 >Registration</h5>
-            <input type="text" placeholder="Enter your email &#128151" name="email" class="email-input">
-            <br>
-            <input type="text" placeholder="Enter your password &#128151" name="email" class="email-input">
-            <br>
-            <br>
-            <label for="username" class="username-label">Username&#128525:</label>
-            <input type="text" id="username" name="username" class="username-input">
-            <br>
-            <br>
-            <input type="checkbox" name="subscribe" value="news" class="subscribe-checkbox"> Subscribe to news
-            <input type="checkbox" name="subscribe" value="updates" class="subscribe-checkbox"> Subscribe to updates
-            <input type="checkbox" name="subscribe" value="offers" class="subscribe-checkbox"> Subscribe to offers
-            <br>
-            <br>
-            <input type="radio" name="gender" value="male" class="gender-radio"> Male
-            <input type="radio" name="gender" value="female" class="gender-radio"> Female
-            <br>
-            <br>
-            <button type="submit" class="submit-button">Subscribe</button>
-            <br>
-            <br>
-            <input type="file" name="file" class="file-input"> Photo Upload
-            <br>
-            <br>
-            <textarea name="message" rows="5" cols="30" class="message-textarea"></textarea> Біографія
-            <br>
-            <br>
-            <h5>Favourite tacktics</h5>
-            <select name="tactics" class="tactics-select">
-                <option value="zonal-marking">Zonal Marking</option>
-                <option value="man-to-man-marking">Man-to-Man Marking</option>
-                <option value="counter-attacking">Counter-Attacking</option>
-                <option value="possession-play">Possession Play</option>
-            </select>
-            <br>
-        </form>
-        <p>Contact us: football@example.com</p>
+        <button onclick="window.location.href='registration.html'">Registration</button>
     </footer>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var contactLink = document.querySelector('.menu li:last-child a');
+
+        contactLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
 </html>
