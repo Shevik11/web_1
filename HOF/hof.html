@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <title>Teams HoF</title>
+    <link rel="stylesheet" href="hof.css">
+</head>
+<body>
+    <nav class="navigation" aria-label="Main Navigation">
+        <ul class="menu" id="myMenu">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" onclick="redirectToPage('../index.html')">Home</a></li>
+            <li><a href="#" onclick="redirectToPage('../reg/registration.html')">Registration</a></li>
+        </ul>
+    </nav>
+    <br> <br>
+    <h1 class="title">GOAT Teams </h1>
+    <h2>Here I post best teams of all times(my mind)</h2>
+    <h2>Below I'll place some links to another top where you can find your team</h2>
+    <br> <br>
+    <h2> 1. Barcelona 2008-2012</h2>
+    <a> This team was the best in the world for 4 years. They won 2 Champions League, 3 La Liga, 2 Copa del Rey, 2 UEFA Super Cup, 2 FIFA Club World Cup. They played the best football in the world. They had the best players, coach in the world. Always when i watch how they play I'm in shock how it possible and no team make same effect at me like they  </a>
+    <div style="display: flex; justify-content: space-between; margin: 0 10%;">
+        <img src="../image/barca.jpg" alt="Eng flag" style="width: 25%;">
+        <img src="../image/barca_2.jpg" alt="Image 2" style="width: 25%;">
+    </div>
+    <br><br>
+    
+</body>
+<script>
+    function redirectToPage(page) {
+        window.location.href = page;
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        var contactLink = document.querySelector('.menu li:last-child a');
+
+        contactLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        });
+        document.getElementById("registration-btn").addEventListener("click", function() {
+            this.classList.add("active"); // Add the "active" class to change styles
+            setTimeout(() => {
+                this.classList.remove("active"); // Remove the "active" class after 0.3 seconds
+            }, 300);
+        });
+    });
+
+</script>
+
+</html>

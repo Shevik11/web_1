@@ -35,7 +35,7 @@ body {
   }
 
 .menu a {
-    color:blue
+    color:blue;
 }
 
 .menu a:active {
@@ -54,8 +54,29 @@ body {
     text-decoration: none; /* видалити підкреслення посилань */
     color: green; /* колір тексту посилань */
     font-size: 20px;
+    text-align: center;
 }
 
 .linke a:hover {
     text-decoration: underline;
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0; /* Відстань від країв */
+}
+
+.img-container img {
+    width: 500px; /* Розмір фотографій */
+    margin: 0 10px; /* Відстань між фотографіями */
+}
+
+.aaa a {
+    display: inline-block; /* Додаємо display: inline-block */
+    background-color: #1d1d1d;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
 }
