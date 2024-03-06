@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Page</title>
+    <link rel="stylesheet" href="hist.css">
+</head>
+<body>
+    <nav class="navigation" aria-label="Main Navigation">
+        <ul class="menu" id="myMenu">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" onclick="redirectToPage('../index.html')">Home</a></li>
+            <li><a href="#" onclick="redirectToPage('../reg/registration.html')">Registration</a></li>
+        </ul>
+    </nav>
+    <br> <br>
+        <h1 class="title">Here you can read some information about football history</h1>
+
+        <h2>When and where it started</h2>
+        <p>No one knows the full information about where and who invented this game.</p>
+        <p>There are some variations of where football was started.</p>
+        <p>The most popular theories are Chinese, English, and Italian.</p>
+        <p>Below you can read about these theories:</p>
+        
+            <div class="linke">
+                <a href="https://www.reddit.com/r/football/comments/ofx1hc/did_england_really_invent_football/" target="_blank">England</a>
+                <a href="https://www.theguardian.com/notesandqueries/query/0,5753,-19682,00.html" target="_blank">Italy</a>
+                <a href="https://www.bbc.com/news/magazine-35409594"  target="_blank">Chinese </a>
+            </div>
+            <div class="img-container">
+                <img src="../image/eng.jpg" alt="Eng flag">
+                <img src="../image/Italy.jpg" alt="Image 2">
+                <img src="../image/chinese.jpg" alt="Image 3">
+            </div>
+            
+            
+    <br>
+    <br>
+    <h2>First clubs</h2>
+    <p> Football clubs have existed since the 15th century, but unorganized and without official status, so it's hard to decide which the first football club was.</p>
+    <p> But there're some clubs that must be known.</p>
+    <ul>
+        <li class="club"><strong>Foot-Ball Club formed 1824 in Edinburgh</strong></li>
+        <li class="club"><strong>The first football club, formed by former school students, was established in Sheffield in 1855.</strong></li>
+        <li class="club"><strong>The oldest among professional football clubs is the English club Notts County that was formed in 1862 and still exists today.</strong></li>
+    </ul>
+    <div class="linke">
+    <a href="https://en.wikipedia.org/wiki/Oldest_football_clubs" target="_blank">Information about oldest clubs</a>
+    </div>
+    <div class="img-container">
+        <img src="../image/Edinburg.jpg" alt="Eng flag">
+        <img src="../image/Ssheffild.jpg" alt="Image 2">
+        <img src="../image/NC.jpg" alt="Image 3">
+    </div>
+    <br>
+    <br>
+    <h2>The first competitions</h2>
+    <a>Football's story is a fascinating journey through time. It began with the formation of the first football associations and the inaugural international matches, leading to the establishment of FIFA.</a>
+    <br>
+    <br>
+    <a>As the game spread beyond Britain, national leagues were formed, starting with the English Football League in 1888.</a>
+    <br>
+    <br>
+    <a>Football's journey culminated in its recognition as an official Olympic sport in 1908, with women's football eventually joining the Olympic program in 1996.</a>
+    <br>
+    <br>
+    <div class="linke">
+        <a href="https://en.wikipedia.org/wiki/1888%E2%80%9389_Football_League" target="_blank">More info about EFL</a>
+        <a href="https://www.globalfootballrankings.com/" target="_blank">Modern leagues rate</a>
+    </div>
+    <br> <br>
+    <div style="display: flex; justify-content: space-between; margin: 0 10%;">
+        <img src="../image/Photo.jpg" alt="Eng flag" style="width: 25%;">
+        <img src="../image/EPL.jpg" alt="Image 2" style="width: 25%;">
+    </div>
+    <br> <br>
+    <h2>Globalization of the biggest sport in the world</h2>
+    <a> In the late 19th century, football was primarily played between national teams like England and Scotland. Today, FIFA oversees 211 national associations, highlighting football's global reach.</a>
+    <br> <br>
+    <a>The sport's allure lies in its blend of individual talent and collective effort, offering a stage for both triumph and unpredictability.</a>
+    <br> <br>
+    <div class="linke">
+        <a href="https://www.wcas.northwestern.edu/projects/globalization/secure/articles/robertsonpdf.htm.pdf" target="_blank">Globalozation</a>
+        <a href="https://journals.codesria.org/index.php/codesriabulletin/article/view/3016" target="_blank">Globalozation Performance</a>
+    </div>
+    <br> <br>
+    <div style="display: flex; justify-content: space-between; margin: 0 10%;">
+        <img src="../image/arena.jpg" alt="Eng flag" style="width: 25%;">
+        <img src="../image/vbol.jpg" alt="Image 2" style="width: 25%;">
+    </div>
+    <h2>The name of the game: football or soccer?</h2>
+    <br> <br>
+    <a>If you want to say soccer. First of all you are stfu</a>
+    <br> <br>
+    <a>And watch this to know that only football right</a>
+    <br> <br>
+    <div class="linke">
+        <a href="https://vm.tiktok.com/ZMM2k3KHC" target="_blank">First</a>
+        <a href="https://vm.tiktok.com/ZMM2kKoV8" target="_blank">Second</a>
+        <a href="https://vm.tiktok.com/ZMM2kvG9b" target="_blank">Third</a>
+    </div>
+    <br> <br>
+    <a>If u still disagree with me, write me in Instagram/telegram\tiktok </a>
+
+</body>
+<script>
+    function redirectToPage(page) {
+        window.location.href = page;
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        var contactLink = document.querySelector('.menu li:last-child a');
+
+        contactLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        });
+        document.getElementById("registration-btn").addEventListener("click", function() {
+            this.classList.add("active"); // Add the "active" class to change styles
+            setTimeout(() => {
+                this.classList.remove("active"); // Remove the "active" class after 0.3 seconds
+            }, 300);
+        });
+    });
+
+</script>
+
+</html>

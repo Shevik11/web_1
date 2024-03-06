@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <title>Registration</title>
     <link rel="stylesheet" href="styles_registrtion.css">
 </head>
 <body>
+    <ul class="menu" id="myMenu">
+        <li><a href="#">Contact</a></li>
+        <li><a href="#" onclick="redirectToPage('../index.html')">Home</a></li>
+        <li><a href="#" onclick="redirectToPage('registration.html')">Registration</a></li>
+    </ul>    
+    <br>
+    <br>
     <form class="form">
         <h1>Registration</h1>
         <input type="text" placeholder="Enter your email &#128151" name="email" class="email-input">
@@ -42,7 +50,24 @@
         <button type="submit" class="submit-button">Subscribe</button>
         <br>
         <br>
-        <p>Contact us: football@example.com</p>
+        <p style="color: black; background-color: yellow;">Contact us: <a class="new" href="mailto:maksshevchuk621@gmail.com"><strong>maksshevchuk621@gmail.com</strong></a></p>
     </form>
 </body>
+<script>
+    function redirectToPage(page) {
+        window.location.href = page;
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        var contactLink = document.querySelector('.menu li:last-child a');
+
+        contactLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        });
+    });
+
+</script>
 </html>

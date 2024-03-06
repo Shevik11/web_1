@@ -1,0 +1,445 @@
+$primary-color: #333333;
+$secondary-color: #1d1d1d;
+$button-background: #f2f2f2;
+$button-border: #ccc;
+$button-text: #333333;
+$footer-color: white;
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: $secondary-color;
+    color: white;
+    padding: 10px 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.menu li a:active {
+    color: blue;
+}
+
+.menu li {
+    margin-right: 1px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+#defensive-image {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+}
+
+footer {
+    background-color: $primary-color;
+    color: $footer-color;
+    padding: 20px;
+}
+
+.section-heading {
+    color: $primary-color;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: $button-background;
+    border: 1px solid $button-border;
+    text-align: center;
+    text-decoration: none;
+    color: $button-text;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+#special-characters {
+    opacity: 0.5;
+}
+
+#coaches {
+    background-color: $primary-color;
+    color: white;
+    padding: 20px;
+}
+
+.coaches-table {
+    background-color: white;
+    color: $primary-color;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.coaches-table th, .coaches-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.coaches-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.coaches-table tr:hover {
+    background-color: #ddd;
+}
+
+.main-heading, .sub-heading, .section-heading {
+    color: $primary-color;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#sub-tactics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.strategy img {
+    width: 300px;
+    height: auto;
+}
+
+#main-content {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-color;
+    color: white;
+    padding: 20px;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ol {
+    margin-left: 20px;
+    list-style-position: inside;
+    background-color: $secondary-color;
+}
+
+.navigation {
+    background-color: $primary-color;
+    padding: 10px;
+    color: $footer-color;
+}
+
+li {
+    margin-bottom: 5px;
+    padding-left: 10px;
+    background-color: $secondary-color;
+}
+
+dl {
+    background-color: $secondary-color;
+}
+
+#main-content ul {
+    list-style-type: square;
+}
+
+#main-content ol {
+    list-style-type: decimal;
+}
+
+.flex-container {
+    display: flex;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.title {
+    color: $footer-color;
+    text-align: center;
+}
+.slide-up {
+    animation: slide-up 0.5s ease-out forwards;
+}
+
+.team-list {
+    background-color: $secondary-color;
+    padding-left: 20px;
+}
+
+.section-heading, .sub-heading {
+    text-align: center;
+}
+
+.tactics-list {
+    padding-left: 20px;
+}
+
+.menus {
+    background-color: $secondary-color;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style-type: disc;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $button-background;
+    color: $primary-color;
+    padding: 20px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.space {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        display: none; /* Hide the menu on small screens */
+    }
+
+    .menu-toggle {
+        display: block; /* Show the menu toggle on small screens */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px 50px;
+    }
+
+    .menu {
+        width: auto;
+        color: white;
+    }
+
+    .space {
+        margin-top: 0;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+  }
+
+  .wrapper .icon {
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background: #0012B9;
+    color: #ffffff;
+  }
+
+  .wrapper .steam:hover,
+  .wrapper .steam:hover .tooltip,
+  .wrapper .steam:hover .tooltip::before {
+    background: #000000;
+    color: #ffffff;
+  }
+
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: #e0163b;
+    color: #ffffff;
+  }
+
+  .wrapper .github:hover,
+  .wrapper .github:hover .tooltip,
+  .wrapper .github:hover .tooltip::before {
+    background: #000000;
+    color: #ffffff;
+  }
+
+  .wrapper .tiktok:hover,
+  .wrapper .tiktok:hover .tooltip,
+  .wrapper .tiktok:hover .tooltip::before {
+    background: #000000;
+    color: #ffffff;
+  }
+  .wrapper .telegram:hover,
+  .wrapper .telegram:hover .tooltip,
+  .wrapper .telegram:hover .tooltip::before {
+    background: #0012B9;
+    color: #ffffff;
+  }
+  /* YouTube Link Styles */
+
+  #source-link {
+    top: 60px;
+  }
+
+  #source-link>i {
+    color: rgb(94, 106, 210);
+  }
+
+  #yt-link {
+    top: 10px;
+  }
+
+  #yt-link>i {
+    color: rgb(219, 31, 106);
+  }
+
+  .meta-link {
+    align-items: center;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: inline-flex;
+    gap: 5px;
+    left: 10px;
+    padding: 10px 20px;
+    position: fixed;
+    text-decoration: none;
+    transition: background-color 600ms, border-color 600ms;
+    z-index: 10000;
+  }
+
+  .meta-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .meta-link>i,
+  .meta-link>span {
+    height: 20px;
+    line-height: 20px;
+  }
+
+  .meta-link>span {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    transition: color 600ms;
+  }
+.my-block-slide-up {
+
+}
+
+.meta-link>span {
+    height: 20px;
+    line-height: 20px;
+  }
+
+  .meta-link>span {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    transition: color 600ms;
+  }
+  
+#registration-btn {
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Add transition effect for transform and background-color */
+}
+#registration-btn:hover {
+    transform: scale(1.1); /* Increase the scale of the button by 10% */
+    background-color: #161616; /* Change the background color to red */
+    color: white; /* Change the text color to white */
+}

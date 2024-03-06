@@ -1,281 +1,440 @@
-/* CSS for coaches table */
-
-/* header {
-    display: flex;
-    flex-direction: column; /* Вирівнювання по вертикалі 
-    justify-content: center; /* Вирівнювання по центру горизонталі 
-    align-items: center; /* Вирівнювання по центру вертикалі 
-    background-color: #333; /* Колір фону *
-    color: white; /* Колір тексту *
-    padding: 20px; /* Відступ /
-} */
-
-#defensive-image {
-    width: 300px;
-    height: auto;
-    margin: 10px;
-    padding: 5px;
-}
-
-footer {
-    background-color: #333333;
-    color: white; /* Колір тексту */
-    padding: 20px; /* Відступ для футера */
-}
-
-
-
-.section-heading {
-    color: #333;
-    text-align: center;
-}
-
-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    text-align: center;
-    text-decoration: none;
-    color: #333333;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-#special-characters {
-    opacity: 0.5; /* Півпрозорий */
-}
-
-#coaches {
-    background-color: #333333; /* Колір фону контейнера */
-    color: white; /* Колір тексту у контейнері */
-    padding: 20px; /* Відступ для контейнера */
-}
-
-.coaches-table {
-    background-color: white; /* Колір фону таблиці */
-    color: #333333; /* Колір тексту у таблиці */
-    border-collapse: collapse; /* Злиття рамок таблиці */
-    width: 100%; /* Ширина таблиці */
-}
-
-.coaches-table th, .coaches-table td {
-    border: 1px solid #ddd; /* Рамка для комірок */
-    padding: 8px; /* Відступ у комірках */
-    text-align: left; /* Вирівнювання тексту по лівому краю */
-}
-
-.coaches-table tr:nth-child(even) {
-    background-color: #f2f2f2; /* Заливка кожного другого рядка */
-}
-
-.coaches-table tr:hover {
-    background-color: #ddd; /* Заливка при наведенні на рядок */
-}
-
-.coaches-table th, .coaches-table td {
-    border: 1px solid #ddd; /* Відокремлення між комірками */
-    padding: 8px;
-    text-align: left;
-}
-
-/* CSS for main headings */
-.main-heading, .sub-heading, .section-heading {
-    color: white; /* Колір тексту */
-    font-family: Arial, sans-serif; /* Шрифт */
-    margin-bottom: 10px; /* Відступ знизу */
-    text-align: center;
-}
-
-#sub-tactics {
-    display: flex; /* Зробити контейнер гнучким */
-    flex-direction: row; /* Розташувати елементи в рядок */
-    justify-content: space-around; /* Рівномірно розподілити простір між елементами по горизонталі */
-    align-items: center; /* Вирівняти елементи по вертикалі по центру */
-}
-
-
-/* CSS for images */
-.strategy img {
-    width: 300px; /* Розмір зображень */
-    height: auto; /* Автоматична висота для збереження пропорцій */
-}
-
-#main-content {
-    overflow: auto; /* Показувати прокрутку, якщо вміст не поміщається */
-}
-
-/* Додаткові стилі можна додавати тут */
-
-a {
-    color: green; /* Колір тексту для звичайних посилань */
-    text-decoration: none; /* Відміна підкреслення */
-}
-
-a:hover {
-    text-decoration: underline; /* Підкреслення при наведенні курсора */
-}
-
-ol {
-    margin-left: 20px; /* Відступ від лівого краю для всіх списків */
-    list-style-position: inside; /* Розміщення маркера всередині блоку списку */
-    background-color: #1d1d1d;
-
-}
-.navigation {
-    background-color: #333333; /* Замініть це на ваш колір фону */
-    padding: 10px; /* Додайте відступ для кращого вигляду */
-    color: white;
-}
-
-li {
-    margin-bottom: 5px; /* Відступ знизу для кожного пункту списку */
-    padding-left: 10px; /* Відступ від лівого краю для тексту пункту списку */
-    background-color: #1d1d1d;
-
-}
-dl {
-    background-color: #1d1d1d;
-
-}
-
-/* Стилі для списку, який знаходиться в #main-content */
-#main-content ul {
-    list-style-type: square; /* Тип маркера (квадрат) для невпорядкованого списку */
-}
-
-#main-content ol {
-    list-style-type: decimal; /* Тип маркера (цифра) для впорядкованого списку */
-}
-
-.flex-container {
-    display: flex;
-}
-
-@keyframes slide-up {
-    from {
-        opacity: 0;
-        transform: translateY(100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.slide-up {
-    animation: slide-up 0.5s ease-out forwards;
-}
-
-.team-list{
-    background-color: #333333;
-    padding-left: 20px; /* Відступ для списку команд */
-
-}
-
-#main-content {
-    display: flex;
-    flex-direction: column; /* Вирівнювання по вертикалі */
-    background-color: #333; /* Колір фону */
-    color: white; /* Колір тексту */
-    padding: 20px; /* Відступ */
-}
-
-/* Стилі для заголовків */
-.section-heading, .sub-heading {
-    text-align: center; /* Вирівнювання тексту по центру */
-}
-
-/* Стилі для списку команд */
-.team-list {
-    list-style-type: none; /* Видалити маркери списку */
-    padding: 0; /* Видалити відступи */
-}
-
-/* Стилі для списку тактик */
-.tactics-list {
-    padding-left: 20px; /* Відступ для списку тактик */
-}
-
-/* Стилі для зображень стратегій */
-.strategy img {
-    width: 300px; /* Зберігаємо ширину в 300px */
-    height: auto; /* Автоматична висота для збереження пропорцій */
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .menu {
-    display: flex; /* Встановлення flex контейнера */
-    justify-content: space-around; /* Рівномірне розподілення простору між елементами по горизонталі */
-    width: 100%; /* Ширина меню на всю ширину контейнера */
-    background-color: #1d1d1d; /* Замініть це на ваш колір фону */
-    color: white; /* Колір тексту */
-    padding: 10px 0; /* Відступи для меню */
-    margin: 0;
-    list-style-type: none; /* Видалення маркерів списку */
-    font-size: 20px; /* Розмір тексту для пунктів меню */
-}
-
-.menus {
-    background-color: #1d1d1d; /* Замініть це на ваш колір фону */
-    display: flex; /* Встановлення flex контейнера */
-    justify-content: space-around; /* Рівномірне розподілення простору між елементами по горизонталі */
-    width: 100%; /* Ширина меню на всю ширину контейнера */
-    list-style-type: disc;
-    font-size: 18px; /* Розмір тексту для пунктів меню */
-
-}
-
-
-
-/* CSS для основного контейнера */
-.container {
-    display: flex; /* Встановлення flex контейнера */
-    flex-direction: column; /* Вирівнювання по вертикалі */
-    align-items: center; /* Вирівнювання елементів по центру горизонталі */
-    background-color: #f2f2f2; /* Колір фону контейнера */
-    color: #333; /* Колір тексту */
-    padding: 20px; /* Відступи для контейнера */
-}
-
-h1 {
-    margin-top: 0; /* Видалення верхнього відступу для заголовка */
-}
-
-/* CSS для відступу між блоками */
-.space {
-    margin-top: 20px; /* Відступ зверху між блоками */
-}
-
-
-/* Медіа-запит для адаптивного дизайну */
-@media only screen and (min-width: 768px) {
-    .container {
-        flex-direction: row; /* Зміна напрямку flex контейнера на горизонтальний */
-        justify-content: space-between; /* Рівномірне розподілення простору між елементами по горизонталі */
-        align-items: flex-start; /* Вирівнювання по верхній частині горизонталі */
-        padding: 20px 50px; /* Відступи для контейнера */
-    }
-
-    .menu {
-        width: auto; /* Автоматична ширина меню */
-        color: white;
-    }
-
-    .space {
-        margin-top: 0; /* Видалення верхнього відступу між блоками */
-    }
-
-    .footer {
-        padding: 20px; /* Відступи для футера */
-    }
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #1d1d1d;
+  color: white;
+  padding: 10px 0;
+  margin: 0;
+  list-style-type: none;
+  font-size: 20px;
 }
 
 .menu li {
-    margin-right: 1px; /* Додатковий відступ між пунктами меню */
+  margin-right: 1px;
 }
 
 .menu li:last-child {
-    margin-right: 0; /* Видаляємо відступ для останнього пункту */
+  margin-right: 0;
 }
 
+#defensive-image {
+  width: 300px;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+}
+
+footer {
+  background-color: #333333;
+  color: white;
+  padding: 20px;
+}
+
+.section-heading {
+  color: #333333;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  text-align: center;
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
+#special-characters {
+  opacity: 0.5;
+}
+
+#coaches {
+  background-color: #333333;
+  color: white;
+  padding: 20px;
+}
+
+.coaches-table {
+  background-color: white;
+  color: #333333;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.coaches-table th, .coaches-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.coaches-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.coaches-table tr:hover {
+  background-color: #ddd;
+}
+
+.main-heading, .sub-heading, .section-heading {
+  color: #333333;
+  font-family: Arial, sans-serif;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#sub-tactics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.strategy img {
+  width: 300px;
+  height: auto;
+}
+
+#main-content {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #333333;
+  color: white;
+  padding: 20px;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ol {
+  margin-left: 20px;
+  list-style-position: inside;
+  background-color: #1d1d1d;
+}
+
+.navigation {
+  background-color: #333333;
+  padding: 10px;
+  color: white;
+}
+
+.navigation a:active {
+  color: blue;
+}
+
+li {
+  margin-bottom: 5px;
+  padding-left: 10px;
+  background-color: #1d1d1d;
+}
+
+dl {
+  background-color: #1d1d1d;
+}
+
+#main-content ul {
+  list-style-type: square;
+}
+
+#main-content ol {
+  list-style-type: decimal;
+}
+
+.flex-container {
+  display: flex;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.title {
+  color: white;
+  text-align: center;
+}
+
+.slide-up {
+  animation: slide-up 0.5s ease-out forwards;
+}
+
+.team-list {
+  background-color: #1d1d1d;
+  padding-left: 20px;
+}
+
+.section-heading, .sub-heading {
+  text-align: center;
+}
+
+
+
+.menus {
+  background-color: #1d1d1d;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  list-style-type: disc;
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  color: #333333;
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.space {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    display: none; /* Hide the menu on small screens */
+  }
+  .menu-toggle {
+    display: block; /* Show the menu toggle on small screens */
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 50px;
+  }
+  .menu {
+    width: auto;
+    color: white;
+  }
+  .space {
+    margin-top: 0;
+  }
+  .footer {
+    padding: 20px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #0012B9;
+  color: #ffffff;
+}
+
+.wrapper .steam:hover,
+.wrapper .steam:hover .tooltip,
+.wrapper .steam:hover .tooltip::before {
+  background: #000000;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e0163b;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #000000;
+  color: #ffffff;
+}
+
+.wrapper .tiktok:hover,
+.wrapper .tiktok:hover .tooltip,
+.wrapper .tiktok:hover .tooltip::before {
+  background: #000000;
+  color: #ffffff;
+}
+
+.wrapper .telegram:hover,
+.wrapper .telegram:hover .tooltip,
+.wrapper .telegram:hover .tooltip::before {
+  background: #0012B9;
+  color: #ffffff;
+}
+
+/* YouTube Link Styles */
+#source-link {
+  top: 60px;
+}
+
+#source-link > i {
+  color: rgb(94, 106, 210);
+}
+
+#yt-link {
+  top: 10px;
+}
+
+#yt-link > i {
+  color: rgb(219, 31, 106);
+}
+
+.meta-link {
+  align-items: center;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: inline-flex;
+  gap: 5px;
+  left: 10px;
+  padding: 10px 20px;
+  position: fixed;
+  text-decoration: none;
+  transition: background-color 600ms, border-color 600ms;
+  z-index: 10000;
+}
+
+.meta-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.meta-link > i,
+.meta-link > span {
+  height: 20px;
+  line-height: 20px;
+}
+
+.meta-link > span {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  transition: color 600ms;
+}
+
+.meta-link > span {
+  height: 20px;
+  line-height: 20px;
+}
+
+.meta-link > span {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  transition: color 600ms;
+}
+
+#registration-btn {
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Add transition effect for transform and background-color */
+}
+
+#registration-btn:hover {
+  transform: scale(1.1); /* Increase the scale of the button by 10% */
+  background-color: #161616; /* Change the background color to red */
+  color: white; /* Change the text color to white */
+}
+
+/*# sourceMappingURL=styles.css.map */
+.my-block_slide-up {
+  text-align: center;
+  color: white
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around; /* Distribute space evenly between buttons */
+  margin-top: 20px; /* Add some top margin for spacing */
+}

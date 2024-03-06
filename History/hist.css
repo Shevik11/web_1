@@ -1,0 +1,69 @@
+body {
+    background-color: #333333;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.menu {
+    position: absolute;
+    top: 20px; /* Розташування зверху */
+    left: 50%; /* Центруємо по горизонталі */
+    transform: translateX(-50%); /* Центруємо по горизонталі */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #1d1d1d;
+    color: white;
+    padding: 10px 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 20px;
+  }
+
+.title {
+    color: white;
+    text-align: center;
+}
+
+.linke {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1d1d1d; /* фоновий колір */
+    padding: 10px; /* відступи від країв контейнера */
+}
+
+.linke a {
+    padding: 5px 10px; /* відступи всередині посилань */
+    text-decoration: none; /* видалити підкреслення посилань */
+    color: green; /* колір тексту посилань */
+    font-size: 20px;
+}
+
+.club {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-container img {
+    width: 15%;
+    height: 50%;
+}
+
+.menu a {
+    color:blue
+}
+
+.menu a:active {
+    color:red
+}

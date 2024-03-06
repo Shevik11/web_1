@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <title>Rate</title>
+    <link rel="stylesheet" href="rate.css">
+</head>
+<body>
+    <nav class="navigation" aria-label="Main Navigation">
+        <ul class="menu" id="myMenu">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" onclick="redirectToPage('../index.html')">Home</a></li>
+            <li><a href="#" onclick="redirectToPage('../reg/registration.html')">Registration</a></li>
+        </ul>
+    </nav>
+    <br> <br>
+    <h1 class="title">There rate of all time player</h1>
+    <br> <br>
+    <h2 class="discl">You may be disagree with me, so I place below some sites with different opinions</h2>
+    <br> <br>
+    <h2>1. Lionel Messi </h2>
+    <br> <br>
+    <img src="../image/messi.jpg" alt="Eng flag">
+    <br><br>
+    <div class="linke">
+    <a href="https://en.wikipedia.org/wiki/List_of_career_achievements_by_Lionel_Messi" target="_blank"> As for me there no other candidats. That man is crazy, look only at his list of trophy and personal awards</a>
+    </div>
+    <br><br>
+
+</body>
+<script>
+    function redirectToPage(page) {
+        window.location.href = page;
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        var contactLink = document.querySelector('.menu li:last-child a');
+
+        contactLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        });
+
+    });
+
+</script>
+</html>

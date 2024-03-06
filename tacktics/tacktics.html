@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Football Tacktics</title>
+    <link rel="stylesheet" href="tacktics.css">
+</head>
+<body> 
+    <h1 class="title"> Page to learn about football tacktics</h1>
+    <h2 class='title'> Here you will find some information about football tacktics</h2>
+
+    <ul class="menu" id="myMenu">
+        <li><a href="#">Contact</a></li>
+        <li><a href="#" onclick="redirectToPage('../index.html')">Home</a></li>
+        <li><a href="#" onclick="redirectToPage('reg/registration.html')">Registration</a></li>
+    </ul>
+    <br>
+    <br> 
+    <nav class="navigation" aria-label="Main Navigation">
+        <h2>Links to introduction information </h2>
+        <p>In these links you can read about best coaches(tacktscs) and some of best tacktics in history</p>
+        <p>Thats only for introduction, not more</p>
+        <ol class="menus">
+            <li><a href="https://ekipgrass.net/football-tactics/">Tactics</a></li>
+            <li><a href="https://howtheyplay.com/team-sports/Top-10-Best-Football-Managers-In-The-World">Best coaches</a></li>
+        </ol>  
+    </nav>
+
+    <h2> For beginners</h2>
+    <br>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1W4bRAKfMeM" title="YouTube Video" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/j-70s6zWTPY" title="YouTube Video" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_dYy4QGXnns" title="YouTube Video" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PSP42z4yHOQ" title="YouTube Video" allowfullscreen></iframe>
+    </div>    
+    <br>
+    <br>
+    <h3> Links</h3>
+    <br>
+    <br>
+    <div class="linke">
+    <a href="https://www.coachesvoice.com/cv/formations-football-tactics-explained-best-most-used/" target="_blank">There formations football tactics explained</a>
+    <br>
+    <br>
+    <a href="https://www.udemy.com/course/football-tactics/" target="_blank">Introduction to Football tacktics from Udemy</a>
+    <br>
+    <br>
+    <a href="https://www.britannica.com/sports/football-soccer/Strategy-and-tactics" target="_blank">Something about possition</a>
+    </div>
+    <br>
+    <h2 class="my-block slide-up" style="text-align: center;">Main Tactics</h2>
+    <p>Here are the most basic tactics for the game:</p>
+    <p>They not very smart, but everyone must know about them</p>
+    <dl class="tactics-list">
+        <dt>Zonal Marking</dt>
+        <dd>is a defensive football tactic where players defend specific zones rather than marking individual opponents.</dd>
+        <dt>Man-to-Man Marking</dt>
+        <dd>is a defensive football tactic where each defensive player is assigned to mark a specific opponent, following them wherever they go on the field.</dd>
+        <dt>Counter-Attacking</dt>
+        <dd>is a football tactic where a team quickly transitions from defense to offense in response to an opponent's attack, aiming to exploit open spaces and catch the opponent off guard.</dd>
+    </dl>
+    <br>
+    <br>
+    <h1>For sbd who already in it</h1>
+    <br>
+    <br>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hRzd8CHl_hY" title="YouTube Video" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/D8AgTaSShmM" title="YouTube Video" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aYVoX0aK83U" title="YouTube Video" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/51S3J2JSUDY" title="YouTube Video" allowfullscreen></iframe>
+    </div>       
+    <br>
+    <br>
+    <h3> Links</h3>
+    <br>
+    <br>
+    <div class="linke">
+    <a href="https://ekipgrass.net/football-tactics/" target="_blank">tacktics with pictures</a>
+    <br>
+    <br>
+    <a href="https://www.fifplay.com/best-football-tactics/" target="_blank">Best tacktics all time</a>
+    <br>
+    <br>
+    <a href="https://blog.pitchero.com/football-tactics-explained" target="_blank">Most common tacktics</a>
+    </div>
+</body>
+<script>
+    function redirectToPage(page) {
+        window.location.href = page;
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        var contactLink = document.querySelector('.menu li:last-child a');
+
+        contactLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        });
+
+    });
+
+</script>
+</html>

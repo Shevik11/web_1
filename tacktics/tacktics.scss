@@ -1,0 +1,83 @@
+$primary-color: #333333;
+$secondary-color: #1d1d1d;
+$button-background: #f2f2f2;
+$button-border: #ccc;
+$button-text: #333333;
+$footer-color: white;
+
+
+body {
+    background-color: $primary-color;
+    color: $footer-color;
+}
+
+.title {
+    color: $footer-color;
+    text-align: center;
+}
+
+.navigation {
+    background-color: #333333;
+    padding: 10px;
+    color: white;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #1d1d1d;
+    padding: 10px 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 20px;
+    color: blue;
+}
+
+.menu li a {
+    color: inherit; 
+}
+
+.menu li a:active {
+    color: green;
+}
+
+
+
+.menus {
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style-type: disc;
+    font-size: 18px;
+    color: blue;
+    padding: 5px 0;
+  }
+
+.menus a {
+    color: blue; /* Колір тексту синій */
+}
+
+.menus li a:active {
+    color: green;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    margin: 10px;
+}
+
+.linke a {
+    color: green;
+}
+
+.tactics-list {
+    padding-left: 20px;
+  }

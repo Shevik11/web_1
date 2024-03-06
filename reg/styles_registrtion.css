@@ -1,6 +1,42 @@
-/* FILEPATH: /d:/LNU/frontend/web/styles_registrtion.css */
+/* CSS */
+.menu {
+  position: absolute;
+  top: 20px; /* Розташування зверху */
+  left: 50%; /* Центруємо по горизонталі */
+  transform: translateX(-50%); /* Центруємо по горизонталі */
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #1d1d1d;
+  color: black;
+  padding: 10px 0;
+  margin: 0;
+  list-style-type: none;
+  font-size: 20px;
+}
 
-/* Form container */
+.menu li {
+  margin-right: 1px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+ul.menu {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  list-style-type: none;
+  background-color: #1d1d1d;
+  color: blue;
+  padding: 5px 0;
+  margin: 0; /* Видаляє зовнішній відступ у списку */
+}
+
+
+
+
 .registration-form {
   max-width: 400px;
   margin: 0 auto;
@@ -56,4 +92,16 @@ body {
     width: 150px; /* задаємо ширину кнопки */
     height: 40px; /* задаємо висоту кнопки */
     font-size: 16px; /* можна змінити розмір тексту */
+}
+
+a {
+  color: blue;
+}
+
+a:active {
+  color: red;
+}
+
+.new {
+  color:black
 }
