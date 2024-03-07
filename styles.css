@@ -406,17 +406,6 @@ h1 {
   transition: color 600ms;
 }
 
-.meta-link > span {
-  height: 20px;
-  line-height: 20px;
-}
-
-.meta-link > span {
-  color: white;
-  font-family: "Rubik", sans-serif;
-  transition: color 600ms;
-}
-
 #registration-btn {
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Add transition effect for transform and background-color */
 }

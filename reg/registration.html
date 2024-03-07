@@ -3,6 +3,8 @@
 <head>
     <title>Registration</title>
     <link rel="stylesheet" href="styles_registrtion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <ul class="menu" id="myMenu">
@@ -14,9 +16,9 @@
     <br>
     <form class="form">
         <h1>Registration</h1>
-        <input type="text" placeholder="Enter your email &#128151" name="email" class="email-input">
+        <input type="email" placeholder="Enter your email &#128151" name="email" class="email-input">
         <br>
-        <input type="text" placeholder="Enter your password &#128151" name="email" class="email-input">
+        <input type="password" placeholder="Enter your password &#128151" name="email" class="email-input">
         <br>
         <br>
         <label for="username" class="username-label">Username&#128525:</label>
@@ -38,7 +40,7 @@
         <textarea name="message" rows="5" cols="30" class="message-textarea"></textarea> Біографія
         <br>
         <br>
-        <h5>Favourite tactics</h5>
+        <h2>Favourite tactics</h2>
         <select name="tactics" class="tactics-select">
             <option value="zonal-marking">Zonal Marking</option>
             <option value="man-to-man-marking">Man-to-Man Marking</option>
@@ -50,8 +52,51 @@
         <button type="submit" class="submit-button">Subscribe</button>
         <br>
         <br>
-        <p style="color: black; background-color: yellow;">Contact us: <a class="new" href="mailto:maksshevchuk621@gmail.com"><strong>maksshevchuk621@gmail.com</strong></a></p>
+        <p style="color: black; background-color: yellow;">Contacts: <a class="new" href="mailto:maksshevchuk621@gmail.com"><strong>maksshevchuk621@gmail.com</strong></a></p>
     </form>
+    <footer class="my-block-slide-up">
+
+    <div style="text-align: center;">
+        <ul class="wrapper">
+            <li class="icon facebook">
+                <a href="https://www.facebook.com/profile.php?id=100015856004362" target="_blank">
+                    <span class="tooltip">Facebook</span>
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </a>
+            </li>
+            <li class="icon steam">
+                <a href="https://steamcommunity.com/profiles/76561198447631190/" target="_blank">
+                    <span class="tooltip">Steam</span>
+                    <span><i class="fab fa-steam"></i></span>
+                </a>
+            </li>
+            <li class="icon instagram">
+                <a href="https://instagram.com/shevik_11?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr" target="_blank">
+                    <span class="tooltip">Instagram</span>
+                    <span><i class="fab fa-instagram"></i></span>
+                </a>
+            </li>
+            <li class="icon github">
+                <a href="https://www.github.com/Shevik11" target="_blank">
+                    <span class="tooltip">Github</span>
+                    <span><i class="fab fa-github"></i></span>
+                </a>
+            </li>
+            <li class="icon tiktok">
+                <a href="https://www.tiktok.com/@shevik_11?_t=8hNpTCuFqOU&_r=1" target="_blank">
+                    <span class="tooltip">Tiktok</span>
+                    <span><i class="fab fa-tiktok"></i></span>
+                </a>
+            </li>
+            <li class="icon telegram">
+                <a href="https://t.me/shevik11" target="_blank">
+                    <span class="tooltip">Telegram</span>
+                    <span><i class="fab fa-telegram"></i></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    </footer>
 </body>
 <script>
     function redirectToPage(page) {

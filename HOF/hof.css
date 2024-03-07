@@ -46,3 +46,22 @@ body {
     width: 15%;
     height: 50%;
 }
+
+a {
+    background-color: #1d1d1d;
+    padding: 1%;
+}
+
+.linke {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1d1d1d; /* фоновий колір */
+    padding: 10px; /* відступи від країв контейнера */
+}
+
+.linke a {
+    padding: 5px 10px; /* відступи всередині посилань */
+    text-decoration: none; /* видалити підкреслення посилань */
+    color: green; /* колір тексту посилань */
+    font-size: 20px;
+}

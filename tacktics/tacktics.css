@@ -29,6 +29,7 @@ body {
 
 .menu li a {
   color: inherit;
+  font-size: 20px;
 }
 
 .menu li a:active {
@@ -65,8 +66,19 @@ body {
   margin: 10px;
 }
 
+.linke {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1d1d1d; /* фоновий колір */
+  padding: 10px; /* відступи від країв контейнера */
+}
+
 .linke a {
-  color: green;
+  padding: 5px 10px; /* відступи всередині посилань */
+  text-decoration: none; /* видалити підкреслення посилань */
+  color: green; /* колір тексту посилань */
+  font-size: 20px;
+  text-align: center;
 }
 
 .tactics-list {
