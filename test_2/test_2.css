@@ -1,0 +1,18 @@
+body {
+    background-color: #333333;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-decoration: none;
+}
+
+h1 a {
+    color: blue;
+    text-decoration: none;
+}
+
+h1 a:active {
+    color: red;
+}
+

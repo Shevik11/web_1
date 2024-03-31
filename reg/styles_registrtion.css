@@ -15,14 +15,232 @@
   list-style-type: none;
   font-size: 20px;
 }
-footer {
-  position: fixed; /* Чи можливо потрібно вам fixed? */
-  bottom: 0;
+
+.new{
+  width: 150px; /* задаємо ширину кнопки */
+  height: 40px; /* задаємо висоту кнопки */
+  font-size: 16px; /* можна змінити розмір тексту */
+}
+
+.modal {
+  display: none; /* Приховуємо модальне вікно за замовчуванням */
+  position: fixed; /* Фіксоване позиціонування */
+  z-index: 1; /* Встановлюємо високий рівень z-index, щоб модальне вікно було поверх усього */
+  left: 0;
+  top: 0;
   width: 100%;
+  height: 100%;
+  overflow: auto; /* Додаємо прокрутку, якщо контент великий */
+  background-color: rgb(0,0,0); /* Чорний колір фону з прозорістю */
+  background-color: rgba(0,0,0,0.4); /* Чорний колір фону з прозорістю */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* Відступи відверху і знизу, автоматичний розмір для зручності */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* 80% ширина вікна */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form {
+  width: 400px;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+}
+/* Стилі для чекбоксів */
+
+
+/* Зробити галочку чекбокса в іншу сторону */
+/* Стилі для чекбоксів */
+
+/* Коли чекбокс відмічено, змінити фон на чорний */
+
+
+
+
+
+/* Коли радіокнопка відмічена, змінити фон на чорний */
+
+
+
+/* Стилі для чекбоксів */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Відступ між чекбоксами */
+}
+
+.checkbox-label input[type="checkbox"] {
+  display: none; /* Приховуємо оригінальний чекбокс */
+}
+
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+  border-radius: 3px;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox-custom:after {
+  content: "✓"; /* Змінено на × */
+  position: center;
+  display: none;
+  color: #050505;
+  font-size: 20px; /* Збільшено розмір для відповідності */
+  left: 6px;
+  top: 2px;
+  /* transform: rotate(45deg); */
+}
+
+/* Відображаємо галочку, коли чекбокс відмічений */
+.checkbox-label input:checked ~ .checkbox-custom:after {
+  display: block;
+}
+
+.survey_label{
+  font-size: 20px;
+}
+
+.some_radio{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.radio-item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.radio-group_yes_no {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.radio-item_yes_no {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+
+.radio-item input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Стилі для радіокнопок */
+.radio-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Відступ між радіокнопками */
+}
+
+.radio-label input[type="radio"] {
+  display: none; /* Приховуємо оригінальну радіокнопку */
+}
+
+.radio-custom {
+  display: inline-block;
+  flex-shrink: 0; /* Забороняємо зменшувати елемент по горизонталі */
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+
+
+
+.radio-custom::after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%; /* центруємо відносно батьківського елемента */
+  left: 50%; /*центруємо відносно батьківського елемента */
+  transform: translate(-50%, -50%); /* центруємо точку позиціонування */
+  opacity: 0;
+}
+
+.radio-label input[type="radio"]:checked + .radio-custom::after {
+  opacity: 1;
+}
+
+
+
+.form h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.form input,
+.form select,
+.form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#myModal {
+  display: none;
+}
+
+footer {
+  width: 120%;
+  background-color: #ac0a0a;
+  color: white;
+  padding: 20px;
+  background-size: 800%; /* Make the background wider */
 }
 
 .menu li {
-  margin-right: 1px;
+  margin-right: 20px;
 }
 
 .menu li:last-child {
@@ -50,7 +268,7 @@ form {
 
 
 .registration-form {
-  max-width: 400px;
+  max-width: 500px; /* Задайте бажану максимальну ширину */
   margin: 0 auto;
   padding: 20px;
   background-color: #f2f2f2;
@@ -85,14 +303,14 @@ form {
   cursor: pointer;
 }
 body {
-    background-color:  #333333;
-    color: #fff; /* колір тексту */
-    margin: 0; /* видаляє зовнішні відступи */
-    padding: 0; /* видаляє внутрішні відступи */
-    display: flex; /* використовуємо flexbox для центрування */
-    justify-content: center; /* центруємо по горизонталі */
-    align-items: center; /* центруємо по вертикалі */
-    height: 100vh; /* встановлюємо висоту на всю висоту екрану */
+  display: flex;
+  background-color: #333333;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 /* Form submit button hover effect */
@@ -101,9 +319,13 @@ body {
 }
 
 .submit-button {
-    width: 150px; /* задаємо ширину кнопки */
-    height: 40px; /* задаємо висоту кнопки */
-    font-size: 16px; /* можна змінити розмір тексту */
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 a {
@@ -114,9 +336,6 @@ a:active {
   color: red;
 }
 
-.new {
-  color:black
-}
 
 * {
   margin: 0;
@@ -234,7 +453,7 @@ a:active {
 }
 
 /* YouTube Link Styles */
-#source-link {
+/* #source-link {
   top: 60px;
 }
 
@@ -248,7 +467,7 @@ a:active {
 
 #yt-link > i {
   color: rgb(219, 31, 106);
-}
+} */
 
 .meta-link {
   align-items: center;
@@ -316,4 +535,13 @@ a:active {
   display: flex;
   justify-content: space-around; /* Distribute space evenly between buttons */
   margin-top: 20px; /* Add some top margin for spacing */
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.wrapper li:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
 }

@@ -1,0 +1,235 @@
+.form {
+    width: 400px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.form h1 {
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  .form input,
+  .form select,
+  .form textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 5px;
+      box-sizing: border-box;
+}
+
+form {
+    width: 30%;
+    padding: 50px 0;
+    margin: 0 auto; /* Встановлює однаковий зовнішній відступ зліва і справа, а верхній і нижній - нуль */
+    text-align: center;
+}
+
+  
+body {
+    display: flex;
+    background-color: #333333;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+a {
+    color: blue;
+}
+  
+  a:active {
+    color: red;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+  *:focus,
+  *:active {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Відступ між чекбоксами */
+}
+  
+.checkbox-label input[type="checkbox"] {
+    display: none; /* Приховуємо оригінальний чекбокс */
+}
+  
+.checkbox-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+  
+.checkbox-custom:after {
+    content: "✓"; /* Змінено на × */
+    position: center;
+    display: none;
+    color: #050505;
+    font-size: 20px; /* Збільшено розмір для відповідності */
+    left: 6px;
+    top: 2px;
+    /* transform: rotate(45deg); */
+}
+  
+  /* Відображаємо галочку, коли чекбокс відмічений */
+.checkbox-label input:checked ~ .checkbox-custom:after {
+    display: block;
+}
+  
+.survey_label{
+    font-size: 20px;
+}
+  
+.some_radio{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+}
+  
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+  
+.radio-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-left: 60px;
+}
+  
+.radio-group_yes_no {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+  
+.radio-item_yes_no {
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+    margin-left: 70px;
+}
+  
+  
+.radio-item input[type="radio"] {
+    margin-right: 10px;
+}
+  
+  /* Стилі для радіокнопок */
+.radio-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+.radio-label {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Відступ між радіокнопками */
+}
+  
+.radio-label input[type="radio"] {
+    display: none; /* Приховуємо оригінальну радіокнопку */
+}
+  
+.radio-custom {
+    display: inline-block;
+    flex-shrink: 0; /* Забороняємо зменшувати елемент по горизонталі */
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+  
+  
+  
+  
+.radio-custom::after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%; /* центруємо відносно батьківського елемента */
+    left: 50%; /*центруємо відносно батьківського елемента */
+    transform: translate(-50%, -50%); /* центруємо точку позиціонування */
+    opacity: 0;
+}
+  
+.radio-label input[type="radio"]:checked + .radio-custom::after {
+    opacity: 1;
+}
+  
+
+.new{
+    width: 150px; /* задаємо ширину кнопки */
+    height: 40px; /* задаємо висоту кнопки */
+    font-size: 16px; /* можна змінити розмір тексту */
+}
+  
+.modal {
+    display: none; /* Приховуємо модальне вікно за замовчуванням */
+    position: fixed; /* Фіксоване позиціонування */
+    z-index: 1; /* Встановлюємо високий рівень z-index, щоб модальне вікно було поверх усього */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Додаємо прокрутку, якщо контент великий */
+    background-color: rgb(0,0,0); /* Чорний колір фону з прозорістю */
+    background-color: rgba(0,0,0,0.4); /* Чорний колір фону з прозорістю */
+}
+  
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Відступи відверху і знизу, автоматичний розмір для зручності */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* 80% ширина вікна */
+}
+  
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+  

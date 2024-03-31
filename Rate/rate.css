@@ -32,14 +32,14 @@ body {
     margin: 0;
     list-style-type: none;
     font-size: 20px;
-  }
+}
 
 .menu a {
-    color:blue;
+    color: blue;
 }
 
 .menu a:active {
-    color:red
+    color: red;
 }
 
 .linke {
@@ -69,7 +69,8 @@ body {
 }
 
 .img-container img {
-    width: 500px; /* Розмір фотографій */
+    width: 100%; /* Заповнює всю ширину контейнера */
+    max-width: 500px; /* Максимальна ширина фотографії */
     margin: 0 10px; /* Відстань між фотографіями */
 }
 
@@ -81,7 +82,9 @@ body {
     border-radius: 10px;
 }
 
-a {
-    background-color: #1d1d1d;
-    padding: 1%;
+@media (max-width: 768px) {
+    /* Стилі, які будуть застосовуватися для екранів з шириною до 768px */
+    .img-container img {
+        max-width: 100%; /* Заповнює всю ширину контейнера */
+    }
 }

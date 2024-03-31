@@ -1,3 +1,4 @@
+/* Загальні стилі, які будуть застосовуватися до всіх розмірів екрану */
 body {
     background-color: #333333;
     color: white;
@@ -20,7 +21,7 @@ body {
     margin: 0;
     list-style-type: none;
     font-size: 20px;
-  }
+}
 
 .title {
     color: white;
@@ -66,4 +67,23 @@ body {
 
 .menu a:active {
     color:red
+}
+
+/* Медіа-запит для екранів з шириною менше 768px */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Змінюємо напрямок розташування на вертикальний */
+        top: 0; /* Змінюємо розташування меню зверху */
+        left: 0; /* Змінюємо лівий відступ на 0 */
+        transform: none; /* Скасовуємо transform */
+    }
+
+    .menu a {
+        padding: 10px; /* Збільшуємо відступи для кращого натискання */
+    }
+
+    .img-container img {
+        width: 100%; /* Заповнюємо всю ширину контейнера */
+        height: auto; /* Зберігаємо пропорції */
+    }
 }

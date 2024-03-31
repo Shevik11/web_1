@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="test_2.css">
+</head>
+<body>
+    <h1>Football knowledge test</h1>
+    <div id="questions-container"></div>
+    <button id="submit-btn">Submit</button>
+    <div id="result"></div>
+    <script src="./Data.js"></script><br><br>
+
+<h1>Now let's go improve your knowledge <a href="#" onclick="redirectToPage('../index.html')">There</a></h1>
+</body>
+<script>
+    function redirectToPage(page) {
+        window.location.href = page;
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        var contactLink = document.querySelector('.menu li:last-child a');
+
+        contactLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        });
+    })
+</script>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="survey.css">
+    <title>Survey</title>
+</head>
+<body>
+    <form class="form"><br><br><br>
+        <h1>Survey</h1><br><br>
+        <form id="modalSurveyForm">
+            <label for="faculty">1. Choose your faculty:</label><br><br>
+            <select id="faculty" name="faculty" style="width: 100px">
+                <option value="FECT">ФЕЛКТ</option>
+                <option value="FPMI">ФПМІ</option>
+                <option value="FYFB">ФУФБ</option>
+            </select><br><br>
+            <label class="survey_label">2. Choose your year:</label><br><br>
+            <div class="radio-group">
+                <div class="radio-item">
+                    <input type="radio" id="stream1" name="stream" value="1">
+                    <label for="stream1">1 year</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="stream2" name="stream" value="2">
+                    <label for="stream2">2 year</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="stream3" name="stream" value="3">
+                    <label for="stream3">3 year</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="stream4" name="stream" value="4">
+                    <label for="stream4">4 year</label>
+                </div>
+            </div><br><br>
+            <label class="survey_label">3. Number of your group:</label><br>
+            <select id="groupNumber" name="groupNumber" style="width: 50px">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select><br><br>
+            <label class="survey_label">4. Where you from(country):</label><br>
+            <input type="text" id="country" placeholder="Here"><br><br>
+            <label class="survey_label">5. Where you from (city/villiage):</label><br>
+            <input type="text" id="city" placeholder="Here"><br><br>
+            <label class="survey_label" style="text-align: center;">6. You play football?:</label><br><br>
+            <div class="radio-item_yes_no">
+                <input type="radio" id="playFootballYes" name="playFootball" value="yes">
+                <label for="playFootballYes">Yes</label>
+            </div>
+            <div class="radio-item_yes_no">
+                <input type="radio" id="playFootballNo" name="playFootball" value="no">
+                <label for="playFootballNo">No</label>
+            </div>
+            </div><br><br>
+            <button type="submit" id="surveybtn" class="submit-button">Send</button>
+        </form>
+    </form>
+    <script>
+// Збереження значення
+const setValue = (key, value) => localStorage.setItem(key, value ? 'Yes' : 'No');
+
+// Отримання значення
+const getValue = (key) => localStorage.getItem(key) === 'Yes';
+
+// Приклад використання
+const playFootballRadios = document.querySelectorAll('input[name="playFootball"]');
+const playFootball = Array.from(playFootballRadios).find(radio => radio.checked)?.value === 'yes'; // Припускаємо, що значення радіокнопок може бути 'yes' або 'no'
+        const modalSurveyForm = document.getElementById('modalSurveyForm');
+
+        if (modalSurveyForm) {
+            modalSurveyForm.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent form submission
+                saveSurveyData(); // Call the function to save survey data
+            });
+        }
+        setValue('playFootball', playFootball);
+
+    const submitButton = document.getElementById('surveybtn');
+    submitButton.addEventListener('click', saveSurveyData);
+
+    function saveSurveyData() {
+    // Get form values
+    const getValue = (id) => (document.getElementById(id)?.value || 'not provided');
+
+    const faculty = getValue('faculty');
+    const year = document.querySelector('input[name="stream"]:checked')?.value || 'not selected';
+    const groupNumber = getValue('groupNumber');
+    const country = getValue('country');
+    const city = getValue('city');
+    const playFootballRadios = document.querySelectorAll('input[name="playFootball"]');
+    const playFootball = Array.from(playFootballRadios).find(radio => radio.checked)?.value || 'not selected';
+
+    // Create an object with the survey data
+    const surveyData = {
+        faculty,
+        year,
+        groupNumber,
+        country,
+        city,
+        playFootball
+    };
+
+    // Store the survey data in localStorage
+    localStorage.setItem('surveyData', JSON.stringify(surveyData));
+
+    // Display the saved survey data in the console
+    console.log('Survey data saved: ', surveyData);
+
+    // Display all survey data from localStorage in the console
+    const allSurveyData = JSON.parse(localStorage.getItem('surveyData'));
+    console.log('All survey data in localStorage: ', allSurveyData);
+
+    // Optional: Display a success message or perform additional actions
+    alert('Survey data saved!');
+}
+
+    </script>
+</body>
+</html>

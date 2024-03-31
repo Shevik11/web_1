@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <title>Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="styles_registrtion.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -14,24 +16,46 @@
     </ul>    
     <br>
     <br>
-    <form class="form">
+    <form class="form"><br><br><br>
         <h1>Registration</h1>
-        <input type="email" placeholder="Enter your email &#128151" name="email" class="email-input">
+        <input type="email" placeholder="Enter your email 📧" name="email" class="email-input">
         <br>
-        <input type="password" placeholder="Enter your password &#128151" name="email" class="email-input">
+        <input type="password" placeholder="Enter your password 🔒" name="password" class="email-input">
         <br>
         <br>
-        <label for="username" class="username-label">Username&#128525:</label>
+        <label for="username" class="username-label">Username 😁:</label>
         <input type="text" id="username" name="username" class="username-input">
         <br>
         <br>
-        <input type="checkbox" name="subscribe" value="news" class="subscribe-checkbox"> Subscribe to news
-        <input type="checkbox" name="subscribe" value="updates" class="subscribe-checkbox"> Subscribe to updates
-        <input type="checkbox" name="subscribe" value="offers" class="subscribe-checkbox"> Subscribe to offers
-        <br>
-        <br>
-        <input type="radio" name="gender" value="male" class="gender-radio"> Male
-        <input type="radio" name="gender" value="female" class="gender-radio"> Female
+        <div class="checkbox-row">
+            <label class="checkbox-label">
+                <input type="checkbox" name="subscribe" value="news" class="subscribe-checkbox">
+                <span class="checkbox-custom"></span>
+                Subscribe to news
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" name="subscribe" value="updates" class="subscribe-checkbox">
+                <span class="checkbox-custom"></span>
+                Subscribe to updates
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" name="subscribe" value="offers" class="subscribe-checkbox">
+                <span class="checkbox-custom"></span>
+                Subscribe to offers
+            </label>
+        </div><br><br>
+        <div class="radio-row">
+            <label class="radio-label" for="male">
+                <input type="radio" id="male" name="gender" value="male" class="gender-radio">
+                <span class="radio-custom"></span>
+                Male
+            </label>
+            <label class="radio-label" for="female">
+                <input type="radio" id="female" name="gender" value="female" class="gender-radio">
+                <span class="radio-custom"></span>
+                Female
+            </label>
+        </div>        
         <br>
         <br>
         <input type="file" name="file" class="file-input"> Photo Upload
@@ -49,70 +73,64 @@
         </select>
         <br>
         <br>
-        <button type="submit" class="submit-button">Subscribe</button>
+        <button type="submit" id="registerbtn" class="submit-button">Register</button>
         <br>
         <br>
-        <p style="color: black; background-color: yellow;">Contacts: <a class="new" href="mailto:maksshevchuk621@gmail.com"><strong>maksshevchuk621@gmail.com</strong></a></p>
-    </form>
-    <footer class="my-block-slide-up">
+        <button type="button" id="openModalButton" class="submit-button">Additional for best persons</button>
+        <br><br>
+        <div id="myModal" class="modalElement">
+            <div class="modal-content">
+                <span class="close">&times;</span>                    
+                    <br><br> <p style="color: black; background-color: yellow;">Контакти: <a class="new" href="mailto:maksshevchuk621@gmail.com"><strong>maksshevchuk621@gmail.com</strong></a></p><br>
+                </form>
+            <footer class="my-block-slide">
 
-    <div style="text-align: center;">
-        <ul class="wrapper">
-            <li class="icon facebook">
-                <a href="https://www.facebook.com/profile.php?id=100015856004362" target="_blank">
-                    <span class="tooltip">Facebook</span>
-                    <span><i class="fab fa-facebook-f"></i></span>
-                </a>
-            </li>
-            <li class="icon steam">
-                <a href="https://steamcommunity.com/profiles/76561198447631190/" target="_blank">
-                    <span class="tooltip">Steam</span>
-                    <span><i class="fab fa-steam"></i></span>
-                </a>
-            </li>
-            <li class="icon instagram">
-                <a href="https://instagram.com/shevik_11?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr" target="_blank">
-                    <span class="tooltip">Instagram</span>
-                    <span><i class="fab fa-instagram"></i></span>
-                </a>
-            </li>
-            <li class="icon github">
-                <a href="https://www.github.com/Shevik11" target="_blank">
-                    <span class="tooltip">Github</span>
-                    <span><i class="fab fa-github"></i></span>
-                </a>
-            </li>
-            <li class="icon tiktok">
-                <a href="https://www.tiktok.com/@shevik_11?_t=8hNpTCuFqOU&_r=1" target="_blank">
-                    <span class="tooltip">Tiktok</span>
-                    <span><i class="fab fa-tiktok"></i></span>
-                </a>
-            </li>
-            <li class="icon telegram">
-                <a href="https://t.me/shevik11" target="_blank">
-                    <span class="tooltip">Telegram</span>
-                    <span><i class="fab fa-telegram"></i></span>
-                </a>
-            </li>
-        </ul>
-    </div>
-    </footer>
-</body>
+                <div style="text-align: center;">
+                    <ul class="wrapper">
+                        <li class="icon facebook">
+                            <a href="https://www.facebook.com/profile.php?id=100015856004362" target="_blank">
+                                <span class="tooltip">Facebook</span>
+                                <span><i class="fab fa-facebook-f"></i></span>
+                            </a>
+                        </li>
+                        <li class="icon steam">
+                            <a href="https://steamcommunity.com/profiles/76561198447631190/" target="_blank">
+                                <span class="tooltip">Steam</span>
+                                <span><i class="fab fa-steam"></i></span>
+                            </a>
+                        </li>
+                        <li class="icon instagram">
+                            <a href="https://instagram.com/shevik_11?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr" target="_blank">
+                                <span class="tooltip">Instagram</span>
+                                <span><i class="fab fa-instagram"></i></span>
+                            </a>
+                        </li>
+                        <li class="icon github">
+                            <a href="https://www.github.com/Shevik11" target="_blank">
+                                <span class="tooltip">Github</span>
+                                <span><i class="fab fa-github"></i></span>
+                            </a>
+                        </li>
+                        <li class="icon tiktok">
+                            <a href="https://www.tiktok.com/@shevik_11?_t=8hNpTCuFqOU&_r=1" target="_blank">
+                                <span class="tooltip">Tiktok</span>
+                                <span><i class="fab fa-tiktok"></i></span>
+                            </a>
+                        </li>
+                        <li class="icon telegram">
+                            <a href="https://t.me/shevik11" target="_blank">
+                                <span class="tooltip">Telegram</span>
+                                <span><i class="fab fa-telegram"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
 <script>
     function redirectToPage(page) {
         window.location.href = page;
-    }
-    document.addEventListener('DOMContentLoaded', function() {
-        var contactLink = document.querySelector('.menu li:last-child a');
-
-        contactLink.addEventListener('click', function(e) {
-            e.preventDefault();
-            window.scrollTo({
-                top: document.body.scrollHeight,
-                behavior: 'smooth'
-            });
-        });
-    });
+    };
 
 </script>
+</body>
 </html>

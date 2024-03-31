@@ -21,14 +21,17 @@ h2, h3, h4, h5, h6,h1{
 <body>
 
     <div class="title">
-        <h1> introduction in Football </h1>
+        <h1>Introduction to Football</h1>
+        <button  class="btn" onclick="redirectToPage('survey/survey.html')">Take 10 credits for survey</button>
     </div>
+    
+    
 
     <nav class="navigation" aria-label="Main Navigation">
         <ul class="menu" id="myMenu">
-            <li><a href="#">Contact</a></li>
-            <li><a href="#" onclick="redirectToPage('index.html')">Home</a></li>
-            <li><a href="#" onclick="redirectToPage('reg/registration.html')">Registration</a></li>
+            <li><button id="registration-btn" onclick="scrollToBottom()">Contact</button></li>
+            <li><button id="registration-btn" onclick="redirectToPage('index.html')">Home</button></li>
+            <li><button id="registration-btn" onclick="redirectToPage('reg/registration.html')">Registration</button></li>
         </ul>
     </nav>
     <header class="my-block_slide-up">
@@ -51,6 +54,8 @@ h2, h3, h4, h5, h6,h1{
     <br>
     <br>
     <br>
+    <h1 style="text-align: center;"><span>If you answer to all questions try to take the test for football expert</span></h1><br>
+    <button id="registration-btn" onclick="redirectToPage('test_2/test_2.html')">Just do it</button><br><br>
     <h1 style="text-align: center; background-color: #f2f2f2; padding: 10px; color: black">If you want to know more about football (not only play) go by the links to check it</h1>
     <br>
     <br>
@@ -118,23 +123,18 @@ h2, h3, h4, h5, h6,h1{
         function redirectToPage(page) {
             window.location.href = page;
         }
-        document.addEventListener('DOMContentLoaded', function() {
-            var contactLink = document.querySelector('.menu li:last-child a');
-
-            contactLink.addEventListener('click', function(e) {
-                e.preventDefault();
-                window.scrollTo({
-                    top: document.body.scrollHeight,
-                    behavior: 'smooth'
-                });
+        function scrollToBottom() {
+             window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth'
             });
+        }
             document.getElementById("registration-btn").addEventListener("click", function() {
                 this.classList.add("active"); // Add the "active" class to change styles
                 setTimeout(() => {
                     this.classList.remove("active"); // Remove the "active" class after 0.3 seconds
                 }, 300);
             });
-        });
 
 </script>
 

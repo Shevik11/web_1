@@ -20,7 +20,7 @@ body {
     margin: 0;
     list-style-type: none;
     font-size: 20px;
-  }
+}
 
 .title {
     color: white;
@@ -30,11 +30,11 @@ body {
 }
 
 .menu a {
-    color:blue
+    color: blue;
 }
 
 .menu a:active {
-    color:red
+    color: red;
 }
 
 .img-container {
@@ -45,11 +45,6 @@ body {
 .img-container img {
     width: 15%;
     height: 50%;
-}
-
-a {
-    background-color: #1d1d1d;
-    padding: 1%;
 }
 
 .linke {
@@ -64,4 +59,23 @@ a {
     text-decoration: none; /* видалити підкреслення посилань */
     color: green; /* колір тексту посилань */
     font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    /* Стилі, які будуть застосовуватися для екранів з шириною до 768px */
+    .menu {
+        flex-direction: column; /* Змінюємо напрямок розташування на вертикальний */
+        top: 0; /* Змінюємо розташування меню зверху */
+        left: 0; /* Змінюємо лівий відступ на 0 */
+        transform: none; /* Скасовуємо transform */
+    }
+
+    .menu a {
+        padding: 10px; /* Збільшуємо відступи для кращого натискання */
+    }
+
+    .img-container img {
+        width: 100%; /* Заповнюємо всю ширину контейнера */
+        height: auto; /* Зберігаємо пропорції */
+    }
 }
