@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <title>Snake Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navigation" aria-label="Main Navigation">
+        <ul class="menu" id="myMenu">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" onclick="redirectToPage('../index.html')">Home</a></li>
+            <li><a href="#" onclick="redirectToPage('../reg/registration.html')">Registration</a></li>
+        </ul>
+    </nav>
+    <br> <br>
+    <h1>Snake Game</h1>
+    <canvas id="gameCanvas" width="400" height="400" background="white"></canvas>
+    <div id="scoreboard"></div>
+    <script src="game.js"></script>
+    <script>
+        function redirectToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

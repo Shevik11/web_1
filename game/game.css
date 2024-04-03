@@ -1,0 +1,45 @@
+/* Загальні стилі, які будуть застосовуватися до всіх розмірів екрану */
+body {
+    background-color: #333333;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.scoreboard{
+    color:white;
+}
+
+canvas {
+    border: 1px solid #ccc;
+    background-color: white; /* Add this line to set the canvas background color to white */
+}
+
+.gameCanvas{
+    background: white;
+}
+
+.menu {
+    position: absolute;
+    top: 20px; /* Розташування зверху */
+    left: 50%; /* Центруємо по горизонталі */
+    transform: translateX(-50%); /* Центруємо по горизонталі */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #1d1d1d;
+    color: white;
+    padding: 10px 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.menu a {
+    color:blue
+}
+
+.menu a:active {
+    color:red
+}
