@@ -119,21 +119,23 @@ a {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    margin-right: 40px;
-    margin-left: 60px;
+    margin-right: 50px;
+    margin-left: 70px;
 }
   
 .radio-group_yes_no {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: row; /* змінено на рядок */
+    /* flex-wrap: wrap; */
+    justify-content: space-between; /* Розмістити кнопки по краях контейнера */
 }
   
 .radio-item_yes_no {
-    display: flex;
+    display: inline-block; /* Замінено flex на inline-block */
     flex-direction: column;
-    margin-right: 70px;
-    margin-left: 70px;
+    margin-top: 10px;
+    margin-right: 20px; /* Додано відступ між радіокнопками */
+    margin-left: 0; /* Змінивши на 0, щоб скинути зміщення */
 }
   
   
@@ -150,7 +152,7 @@ a {
   
 .radio-label {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     margin-right: 20px; /* Відступ між радіокнопками */
 }
   
@@ -233,3 +235,43 @@ a {
     cursor: pointer;
 }
   
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #1d1d1d;
+    padding: 10px 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 20px;
+    color: blue;
+  }
+  
+  .menu li a {
+    color: inherit;
+    font-size: 20px;
+  }
+  
+  .menu li a:active {
+    color: green;
+  }
+
+#surveybtn{
+    background-color: black;
+    color: white;
+    width: 200px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#surveybtn:hover {
+    background-color: #333;
+}
+
+
+

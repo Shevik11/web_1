@@ -70,7 +70,7 @@ const testData = {
             "answers": [
                 {
                     "answer": "Argentina",
-                    "isCorrect": alse
+                    "isCorrect": false
                 },
                 {
                     "answer": "England",
@@ -116,7 +116,7 @@ const resultContainer = document.getElementById('result');
 
 testData.questions.forEach((question, index) => {
     const questionDiv = document.createElement('div');
-    questionDiv.innerHTML = `<>${index + 1}. ${question.question}</p>`;
+    questionDiv.innerHTML = `<p>${index + 1}. ${question.question}</p>`;
 
     question.answers.forEach(answer => {
         const answerInput = document.createElement('input');
@@ -131,7 +131,7 @@ testData.questions.forEach((question, index) => {
         questionDiv.appendChild(document.createElement('br'));
     });
 
-    questionsContainer.appendChild(questionDiv);
+    questionsContainer.appendChild(questionDiv); // Додайте створений div до контейнера
 });
 
 submitBtn.addEventListener('click', () => {
